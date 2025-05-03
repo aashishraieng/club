@@ -36,7 +36,7 @@ export function Features() {
       }
     }
   };
-
+  const boxCard = {height: '20em'}
   return (
     <section className="py-24 features-bg">
       <motion.div 
@@ -51,6 +51,7 @@ export function Features() {
             variants={cardVariants}
             whileHover={{ y: -10 }}
             className="text-center p-6 rounded-lg border feature-card"
+            style={boxCard}
           >
             <motion.div variants={iconVariants} whileHover="hover">
               <Calendar className="h-12 w-12 mx-auto mb-4 text-primary" />
@@ -63,6 +64,7 @@ export function Features() {
             variants={cardVariants}
             whileHover={{ y: -10 }}
             className="text-center p-6 rounded-lg border feature-card"
+            style={boxCard}
           >
             <motion.div variants={iconVariants} whileHover="hover">
               <Users className="h-12 w-12 mx-auto mb-4 text-primary" />
@@ -75,6 +77,7 @@ export function Features() {
             variants={cardVariants}
             whileHover={{ y: -10 }}
             className="text-center p-6 rounded-lg border feature-card"
+            style={boxCard}
           >
             <motion.div variants={iconVariants} whileHover="hover">
               <Mail className="h-12 w-12 mx-auto mb-4 text-primary" />

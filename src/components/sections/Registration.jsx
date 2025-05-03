@@ -32,26 +32,9 @@ export function Registration() {
   };
 
   return (
-    <section className="relative py-24 bg-white overflow-hidden text-center">
+    <section className="relative py-24 bg-white overflow-hidden text-center" 
+    style={{background: '#f6f8ff'}}>
       {/* Floating Bubbles */}
-      <motion.div
-        className="absolute w-72 h-72 bg-pink-100 rounded-full top-[-50px] left-[-50px] opacity-50 blur-3xl z-0"
-        variants={floatVariants}
-        animate="animate"
-      />
-      <motion.div
-        className="absolute w-72 h-72 bg-pink-200 rounded-full bottom-[-50px] right-[-50px] opacity-50 blur-2xl z-0"
-        variants={floatVariants}
-        animate="animate"
-      />
-
-      <motion.div
-        className="max-w-3xl mx-auto px-4 relative z-10"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
         <motion.h2
           variants={itemVariants}
           className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
@@ -75,7 +58,6 @@ export function Registration() {
           >
             Register Now 🚀
           </Button>
-        </motion.div>
       </motion.div>
     </section>
   );
