@@ -1,0 +1,24 @@
+/* Navbar Logo Styling */
+.logo {
+  height: 50px; /* Adjust the size of the logo */
+  width: auto;  /* Maintain the aspect ratio of the logo */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  filter: brightness(1.2); /* Slight increase in brightness on hover */
+}
+
+/* Optional: Adjustments for the navbar text */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
+  border-bottom: none; /* Hide the bottom border */
+}
