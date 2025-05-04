@@ -7,7 +7,7 @@ import Members from "@/components/sections/Members";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeCustomizer } from "@/components/ThemeCustomizer";
-import { WelcomePage } from "@/components/WelcomePage";
+import { WelcomePage } from "@/components/welcomepage";
 import { Registration } from "@/components/sections/Registration";
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -31,15 +31,16 @@ function App() {
             <Navbar />
             <main className="bg-white min-h-screen">
               <Routes>
-                <Route path="/" element={<><Hero /><Registration /></>} />
+                <Route path="/" element={
+		  <>
+		   <Hero />
+		   <Registration />
+		   <Features />
+		</>} />
                 <Route path="/members" element={<Members />} />
                 <Route path="/contact" element={<Contact />} />
               </Routes>
             </main>
-              {(window.location.pathname === "/")?(<>
-              <Features/>
-              <Contact />
-              </>): (<></>)}
              <Footer />
           </>
 
