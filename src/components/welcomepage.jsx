@@ -6,7 +6,7 @@ import "@/components/layout/Navbar.css";
 
 export function WelcomePage() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gradient-to-r from-blue-400 to-purple-600">
+    <div className="flex items-center justify-center h-screen bg-gradient-to-r from-blue-400 to-purple-600" >
       <motion.div
         className="text-center"
         initial={{ opacity: 0 }}

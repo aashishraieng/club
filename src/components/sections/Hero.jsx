@@ -55,7 +55,7 @@ export function Hero() {
           </motion.p>
           <motion.div variants={itemVariants} className="flex justify-center gap-4">
             <JoinDialog />
-            <Button size="lg" variant="outline" className="button-hover" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Button size="lg" variant="outline" className="button-hover" whilehover={{ scale: 1.05 }} whiletap={{ scale: 0.95 }}>
               Learn More
             </Button>
           </motion.div> 

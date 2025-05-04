@@ -21,8 +21,9 @@ export function Footer() {
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <p className="text-gray-300">Email: info@Metaverse.com</p>
-            <p className="text-gray-300">Phone: (123) 456-7890</p>
+            <p className="text-gray-300"><a href="mailto:info@Metaverse.com">info@Metaverse.com</a></p>
+	    <p className="text-gray-300"><a href="https://instagram.com/">instagram</a></p>
+            <p className="text-gray-300">Phone: +91 (123) 456-7890</p>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
