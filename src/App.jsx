@@ -8,6 +8,7 @@ import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeCustomizer } from "@/components/ThemeCustomizer";
 import { WelcomePage } from "@/components/welcomepage";
+import JoiningForm from "@/components/JoinForm.jsx";
 import { Registration } from "@/components/sections/Registration";
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -39,9 +40,10 @@ function App() {
 		</>} />
                 <Route path="/members" element={<Members />} />
                 <Route path="/contact" element={<Contact />} />
+	      	<Route path="/join-club" element={<JoiningForm />} />
               </Routes>
             </main>
-             <Footer />
+            <Footer />
           </>
 
         </>
